@@ -18,15 +18,15 @@ public class Question10 {
 
 // Find the highest factor of a number 'n' (other than itself)     70
 
-        Scanner Input=new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
         System.out.println("Enter the number  :");
         int x = Input.nextInt();
-        int HF=1;
-        for (int i=1; i<=x;i++){
-            if (x%i==0)
-                HF=i;
+        int HF = 0;
+        for (int i = 1; i < x; i++) {
+            if (x % i == 0) {
+                HF = i;
+            }
         }
         System.out.println(HF);
-	}
-
+    }
 }
